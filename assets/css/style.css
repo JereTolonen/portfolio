@@ -212,7 +212,6 @@ body{
 #btnThemeChange:hover{
     background-color: var(--glass-bg-strong);
     filter: invert(var(--image-invert-ratio-h));
-    transform: rotate(25deg);
 }
 .nav-link {
     color: var(--text-main-alt);
