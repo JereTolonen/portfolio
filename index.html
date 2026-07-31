@@ -26,7 +26,7 @@
             </div>
             <div class="nav-left-content asc g15 row">
                 <img src="assets/icons/icon_toLight.svg" alt="theme" id="btnThemeChange" class="asc">
-                <a href="#" class="main-btn tab-hide">Contact</a>
+                <a href="#contact" class="main-btn tab-hide">Contact</a>
             </div>
         </div>
         <div id="mobNav" style="display: none;padding-inline: 15px;" class="col doNotClose">
@@ -43,9 +43,9 @@
                 <p class="hero-paragraph">>> Software Developer, Programmer</p>
                 <p class="hero-paragraph">With experience in 3D Creation, UI designing and photographing</p>
                 <br>
-                <div class="row g25">
-                    <a href="#" class="main-btn fs24">Contact</a>
-                    <a href="#info" class="secondary-btn fs24">About Me</a>
+                <div class="row g10 mob-flex-wrap">
+                    <a href="#contact" class="main-btn fs22">Contact</a>
+                    <a href="#info" class="secondary-btn fs22">About Me</a>
                 </div>
             </div>
         </div>
@@ -56,21 +56,20 @@
         <div class="max1600 row jcsb g50 general-padding">
             <div class="m-h350p col container w100 h100 jcsb general-padding">
                 <div class="col">
-                    <h1>About Me</h1>
+                    <h2>About Me</h2>
                     <div class="row w100 jcsb mob-view-1 g15">
-                        <div class="col w100">
-                            <br>
+                        <div class="col w100 jcc">
                             <h2>Hello</h2>
-                            <p class="fs24">
+                            <p class="fs22">
                                 I am 17-year old Software developer Student from Kuopio, Finland.
                                 I am active and have been doing well in Coding, 3D Asset Creation and Photographing. 
                                 Also i have experience in plenty of other subjects like graphical designing
                                 <br><br>
                             </p>
                         </div>
-                        <div class="col w100">
+                        <div class="col w100 jcc">
                             <h2>+</h2>
-                            <p class="fs24">
+                            <p class="fs22">
                                 Stuff i like doing in my free time is just simply planning things for my projects
                                 <br><br>
                                 By now i have around 5 years of experience in 3D stuff and closer to 4 years in coding
@@ -80,65 +79,83 @@
                     </div>
                 </div>
                 <div class="row">
-                    <a href="aboutme.html" class="main-btn fs24 w100">Read More</a>
+                    <a href="aboutme.html" class="main-btn fs22 w100">Read More</a>
                 </div>
             </div>
         </div>
     </div>
     <br id="abt"><br>
     <div class="row jcc">
-        <div class="max1600 row jcsb g25 general-padding">
-            <h1>
+        <div class="max1600 row jcsb g25 general-padding aic">
+            <h2>
                 My Skills
-            </h1>
-            <a href="overview.html" class="main-btn fs24">Examples</a>
+            </h2>
+            <a href="projects.html" class="main-btn fs22">Examples</a>
         </div>
     </div>
+    <div class="row jcc">
+        <div class="max1600 w100 general-padding">
+
+            <div class="carousel-wrapper">
+
+                <div class="carousel-viewport">
+                    <div class="row jcsb g50 mob-view-1 carousel-track" id="carouselTrack">
+
+                        <div class="h600p col container w100 h100 jcsb aic click-hover"
+                            onclick="window.location.href='projects.html#programming'">
+                            <h2>Programming</h2>
+                            <div class="img-wrapper">
+                                <img src="assets/images/programming.webp" class="img-showcase">
+                            </div>
+                        </div>
+
+                        <div class="h600p col container w100 h100 jcsb aic click-hover"
+                            onclick="window.location.href='projects.html#threed'">
+                            <h2>CGI / 3D</h2>
+                            <div class="img-wrapper">
+                                <img src="assets/images/placeholder.webp" class="img-showcase">
+                            </div>
+                        </div>
+
+                        <div class="h600p col container w100 h100 jcsb aic click-hover"
+                            onclick="window.location.href='projects.html#designing'">
+                            <h2>UI / Graphics Design</h2>
+                            <div class="img-wrapper">
+                                <img src="assets/images/placeholder.webp" class="img-showcase">
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <br>
+                <div class="tab-hide row jcsb" id="caroucel-buttons">
+                    <button class="secondary-btn " onclick="slideCarousel(-300)">❮</button>
+                    <button class="secondary-btn " onclick="slideCarousel(300)">❯</button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <script src="assets/js/skill_caroucel.js"></script>
     <br>
-    <div class="row jcc">
-        <div class="max1600 row jcsb g50 mob-view-1 general-padding">
-            <div class="h600p col container w100 h100 jcsb aic click-hover" onclick="window.location.href='projects.html#programming'">
-                <h1>Programming</h1>
-                <div class="img-wrapper">
-                    <img src="assets/images/programming.webp" class="img-showcase">
-                </div>
-            </div>
-            <div class="h600p col container w100 h100 jcsb aic click-hover" onclick="window.location.href='projects.html#threed'">
-                <h1>CGI / 3D</h1>
-                <div class="img-wrapper">
-                    <img src="assets/images/placeholder.webp" class="img-showcase">
-                </div>
-            </div>
-            <div class="h600p col container w100 h100 jcsb aic click-hover" onclick="window.location.href='projects.html#designing'">
-                <h1>UI / Graphics Design</h1>
-                <div class="img-wrapper">
-                    <img src="assets/images/placeholder.webp" class="img-showcase">
-                </div>
-            </div>
-        </div>
-    </div>
-    <br><br>
-    <div class="row jcc">
+    <div class="row jcc" id="contact">
         <div class="max1600 row jcsb g50 general-padding">
-            <div class="m-h350p col container w100 h100 jcsb general-padding">
+            <div class="m-h100p col container w100 h100 jcsb general-padding">
                 <div class="col">
-                    <h1>Contact Me!</h1>
-                    <div class="row w100 jcsb mob-view-1 g15">
+                    <h2>Contact Me!</h2>
+                    <div class="row w100 aic jcsb mob-view-1 g15">
                         <div class="col w100">
-                            <br>
-                            <p class="fs32">
+                            <p class="fs22">
                                 Contact me for any reason - about me or your possible project to work with
                             </p>
                         </div>
                         <div class="col w100">
                             <h2>Contact List</h2>
-                            <br>
-                            <p class="fs24">
-                                <a href="mailto:tolonenjere0@gmail.com" class="nav-link asc"><img src="assets/icons/contact32.png" alt="Email" class="h32p w32p ico-invert">Email</a>
-                                <a href="tel:+358401687440" class="nav-link asc"><img src="assets/icons/earth32.png" alt="Phone" class="h32p w32p ico-invert">Phone</a>
-                                <a href="https://github.com/VisualPlate" class="nav-link asc"><img src="assets/icons/brands-github.svg" alt="GitHub" class="h32p w32p ico-invert">GitHub</a>
-                                <a href="https://www.linkedin.com/in/jere-tolonen/" class="nav-link asc "><img src="assets/icons/brands-linkedin-in.svg" alt="LinkedIn" class="h32p w32p ico-invert">LinkedIn</a>
-                                <br><br>
+                            <p class="fs22 row g10 mob-flex-wrap">
+                                <a href="mailto:tolonenjere0@gmail.com" class="nav-link asc row aic "><img src="assets/icons/contact32.png" alt="Email" class="h32p w32p ico-invert"> Email</a>
+                                <a href="tel:+358401687440" class="nav-link asc row aic "><img src="assets/icons/earth32.png" alt="Phone" class="h32p w32p ico-invert"> Phone</a>
+                                <a href="https://github.com/VisualPlate" class="nav-link asc row aic "><img src="assets/icons/brands-github.svg" alt="GitHub" class="h32p w32p ico-invert"> GitHub</a>
+                                <a href="https://www.linkedin.com/in/jere-tolonen/" class="nav-link asc row aic "><img src="assets/icons/brands-linkedin-in.svg" alt="LinkedIn" class="h32p w32p ico-invert">LinkedIn</a>
                             </p>
                             <br>
                         </div>
@@ -147,10 +164,10 @@
             </div>
         </div>
     </div>
-    <br><br>
     <div class="row jcc">
         <div class="max1600 row jcsb g50 general-padding">
             <div class="m-h350p col container w100 h100 jcsb general-padding">
+                <h2>Direct Contact</h2>
                 <div class="col">
                     <form id="contact-form" class="w100">
                         <input type="hidden" name="time" id="dateData" value="">
@@ -162,8 +179,8 @@
                         <input type="text" name="title" required class="w100">
                         <label>Message</label><br>
                         <textarea name="message" required class="w100"></textarea>
-                        <br><br>
-                        <input type="submit" value="Send" class="w100 container col jcc aic" style="color:#fff">
+                        <br>
+                        <input type="submit" value="Send" class="w100 container col jcc aic" id="btnSubmit">
                     </form> 
                     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
                     <script type="text/javascript">
@@ -174,21 +191,22 @@
                         })();
                     </script>
                     <script type="text/javascript">
-                        window.onload = function() {
-                            document.getElementById('contact-form').addEventListener('submit', function(event) {
-                                event.preventDefault();
-                                emailjs.sendForm('service_gihnpk8', 'template_mrg7cyg', this)
-                                    .then(() => {
-                                        console.log('SUCCESS!');
-                                    }, (error) => {
-                                        console.log('FAILED...', error);
-                                    });
-                            });
-                        }
-                    const curDate = new Date();
-                    const dateData = document.getElementById("dateData");
-                    dateData.value = curDate;
-                </script>
+                            window.onload = function() {
+                                document.getElementById('contact-form').addEventListener('submit', function(event) {
+                                    event.preventDefault();
+                                    emailjs.sendForm('service_gihnpk8', 'template_mrg7cyg', this)
+                                        .then(() => {
+                                            console.log('SUCCESS!');
+                                            document.getElementById("btnSubmit").disabled = true
+                                        }, (error) => {
+                                            console.log('FAILED...', error);
+                                        });
+                                });
+                            }
+                        const curDate = new Date();
+                        const dateData = document.getElementById("dateData");
+                        dateData.value = curDate;
+                    </script>
                 </div>
             </div>
         </div>
@@ -211,10 +229,10 @@
                 </div>
                 <div class="col aic">
                     <h3>Contacts</h3>
-                    <a href="mailto:tolonenjere0@gmail.com" class="nav-link">Email</a>
-                    <a href="tel:+358401687440" class="nav-link">Phone</a>
-                    <a href="https://github.com/VisualPlate" class="nav-link">Github</a>
-                    <a href="https://www.linkedin.com/in/jere-tolonen/" class="nav-link">LinkedIn</a>
+                    <a href="mailto:tolonenjere0@gmail.com" class="nav-link"> Email</a>
+                    <a href="tel:+358401687440" class="nav-link"> Phone</a>
+                    <a href="https://github.com/VisualPlate" class="nav-link"> Github</a>
+                    <a href="https://www.linkedin.com/in/jere-tolonen/" class="nav-link"> LinkedIn</a>
                 </div>
             </div>
         </div>

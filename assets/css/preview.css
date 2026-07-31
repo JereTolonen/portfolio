@@ -5,8 +5,8 @@ html,body {
     overflow: hidden;
 }
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-weight: 100;
+    font-family: 'Inter', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 300;
     background-color: #000;
 }
 #currentImage {
@@ -15,6 +15,7 @@ body {
     object-fit: cover;
     pointer-events: none;
     margin-top: 40px;
+    transition: opacity 0.25s ease;
 }
 #prevBtn, #nextBtn {
     position: fixed;
@@ -29,13 +30,17 @@ body {
     flex-direction: column;
     font-size: 32px;
     justify-content: center;
+    cursor: pointer;
+    transition: background-color 0.25s cubic-bezier(.22,1,.36,1);
 }
 #prevBtn:hover, #nextBtn:hover {
-    transition: all 0.17s ease-in-out;
-    background-color:#ffffff2a;
-    background-color: rgba(255, 255, 255, 0.055);
-    backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px);
+    background-color: rgba(255, 255, 255, 0.06);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+}
+#prevBtn:focus-visible, #nextBtn:focus-visible {
+    outline: 2px solid #ffffffaa;
+    outline-offset: -4px;
 }
 #prevBtn {
     left: 0;
@@ -49,8 +54,8 @@ body {
     left: 50%;
     color: #fff;
     margin-block: 15px;
-    border: #ffffff50 solid 1px;
-    border-radius: 12px;
+    border: #ffffff30 solid 1px;
+    border-radius: 14px;
     padding: 5px;
     width: 350px;
     transform: translateX(-175px);
@@ -58,21 +63,30 @@ body {
     flex-direction: row;
     justify-content: space-between;
     z-index: 100;
-    background-color: rgba(255, 255, 255, 0.055);
-    backdrop-filter: blur(20px);
-    -webkit-backdrop-filter: blur(20px);
+    background-color: rgba(20, 20, 24, 0.55);
+    backdrop-filter: blur(20px) saturate(140%);
+    -webkit-backdrop-filter: blur(20px) saturate(140%);
+    box-shadow: 0 12px 40px -12px rgba(0,0,0,0.6);
 }
 .typeBtn {
     background-color: #00000000;
     color: #fff;
     border: #ffffff00 solid 1px;
     padding: 15px;
-    border-radius: 12px;
+    border-radius: 10px;
+    font-family: 'Inter', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    cursor: pointer;
+    transition: background-color 0.2s cubic-bezier(.22,1,.36,1), border-color 0.2s cubic-bezier(.22,1,.36,1), transform 0.2s cubic-bezier(.22,1,.36,1);
 }
 .typeBtn:hover {
-    background-color: rgba(0, 0, 0, 0.2);
+    background-color: rgba(255, 255, 255, 0.1);
     backdrop-filter: blur(20px);
     -webkit-backdrop-filter: blur(20px);
     color: #fff;
-    border: #ffffff50 solid 1px;
+    border: #ffffff40 solid 1px;
+    transform: translateY(-1px);
+}
+.typeBtn:focus-visible {
+    outline: 2px solid #ffffffaa;
+    outline-offset: 2px;
 }
