@@ -153,6 +153,7 @@ body{
 .h400p {height: 400px;}
 .h300p {height: 300px;}
 .h100p {height: 100px;}
+.h50p {height: 50px;}
 .h32p {height: 32px;}
 .m-h600p {min-height: 600px;}
 .m-h350p {min-height: 350px;}
@@ -322,6 +323,59 @@ button {
 .container-skill {
     background: var(--glass-bg-skill) !important;
     border: var(--glass-border-strong) 1px solid !important;
+    border-radius: 14px !important;
+    height: 14px !important;
+    padding: 14px 20px !important;
+}
+
+/* ---------- skill dropdown ---------- */
+.skillsContent {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.skill-dropdown {
+    width: 100%;
+}
+.skill-dropdown-toggle {
+    width: 100%;
+    justify-content: space-between;
+    padding: 14px 20px;
+    border-radius: 14px;
+    border: var(--glass-border) 1px solid;
+    background: var(--glass-bg);
+    backdrop-filter: blur(var(--glass-blur));
+    -webkit-backdrop-filter: blur(var(--glass-blur));
+    color: var(--text-main);
+    font-family: 'Inter', sans-serif;
+    font-size: 15px;
+    font-weight: 500;
+    margin-bottom: 12px;
+    transition: border-color .25s ease, color .25s ease, box-shadow .25s ease;
+}
+.skill-dropdown-toggle:hover {
+    color: var(--accent1-soft);
+    border-color: var(--accent1);
+    box-shadow: var(--glow-accent1);
+}
+.skill-dropdown-arrow {
+    display: inline-flex;
+    margin-left: 12px;
+    transition: transform .3s cubic-bezier(.2,.8,.2,1);
+}
+.skill-dropdown-toggle[aria-expanded="true"] .skill-dropdown-arrow {
+    transform: rotate(180deg);
+}
+.skill-dropdown-content {
+    overflow: hidden;
+    max-height: 0;
+    opacity: 0;
+    margin-bottom: 0;
+    transition: max-height .4s cubic-bezier(.2,.8,.2,1), opacity .3s ease, margin-bottom .4s ease;
+}
+.skill-dropdown-content.open {
+    opacity: 1;
+    margin-bottom: 25px;
 }
 .img-wrapper {
     width: 100%;
@@ -427,6 +481,12 @@ label {
     opacity: 1;
     transform: translateY(0);
     filter: blur(0);
+}
+@media (min-width:768px) {
+    .container-skill {
+        width: 200px;
+        height: 32px !important;
+    }
 }
 
 @media (min-width:1000px) {
