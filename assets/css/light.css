@@ -7,6 +7,7 @@
 
     /* surfaces / glass */
     --glass-bg: rgba(255,255,255,0.62);
+    --glass-bg-skill: rgba(16, 185, 129, 0.08);
     --glass-bg-strong: rgba(255,255,255,0.78);
     --glass-border: rgba(99, 119, 112, 0.294);
     --glass-border-strong: rgba(28,24,20,0.11);
@@ -35,7 +36,7 @@
     --dark-gray: #2d94700d;
 
     /* shadows */
-    --shadow-ambient: 0 18px 48px -18px rgba(60,45,25,0.12);
+    --shadow-ambient: 0 18px 48px -18px rgba(0,0,0,0.25);
     --shadow-soft: 0 8px 24px -12px rgba(60,45,25,0.08);
     --glow-accent1: 0 0 0 1px rgba(168,131,95,0.16),
                     0 6px 18px -8px rgba(168,131,95,0.16);

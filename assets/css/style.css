@@ -152,6 +152,7 @@ body{
 .h500p {height: 500px;}
 .h400p {height: 400px;}
 .h300p {height: 300px;}
+.h100p {height: 100px;}
 .h32p {height: 32px;}
 .m-h600p {min-height: 600px;}
 .m-h350p {min-height: 350px;}
@@ -317,6 +318,10 @@ button {
     border-radius: 28px;
     box-shadow: var(--shadow-ambient);
     transition: border-color .4s ease, box-shadow .4s ease, transform .4s cubic-bezier(.2,.8,.2,1), background .4s ease;
+}
+.container-skill {
+    background: var(--glass-bg-skill) !important;
+    border: var(--glass-border-strong) 1px solid !important;
 }
 .img-wrapper {
     width: 100%;
